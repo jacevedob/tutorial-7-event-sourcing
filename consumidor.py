@@ -1,7 +1,7 @@
 import pulsar
 
 client = pulsar.Client('pulsar://localhost:6650')
-consumer = client.subscribe('my-topic', subscription_name='my-sub')
+consumer = client.subscribe('mi-topic', subscription_name='mi-sub')
 
 while True:
     msg = consumer.receive()
